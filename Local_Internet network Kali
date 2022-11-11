@@ -6,3 +6,11 @@ iface eth0 inet static
 address "ipaddress/"
 gateway "gateway"
 
+----------- DHCP ------------
+auto lo 
+iface lo inet dhcp
+
+auto eth0
+iface eth0 inet dhcp
+#address 192.168.50.100/24
+#gateway 192.168.50.1
